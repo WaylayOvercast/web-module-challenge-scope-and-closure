@@ -59,6 +59,9 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+
+  closure takes place when a function nested inside of another function needs to reach outside of itself to its parent funtion in order to obtain the data of a variable (acting almost as if it were a global variable)
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -80,9 +83,16 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+  console.log inside of the anon function, it is using name which was never passed to its function, name was only passed to the personalDice function itself.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+  newRoll because it is using math.random, and the string "Dan" could be changed.
+
 c. What is the lexical scope of `newRoll`? 
 
+  the parent function personalDice
 
 ### Task 3 - Stretch Goals
 
